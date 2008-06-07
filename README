@@ -1,0 +1,11 @@
+EM.run {
+  EM::add_timer(0) do
+    EM::start_pipeline {
+      EM::pipeline {
+        puts "Hello!"
+      }
+      puts "DONE1"
+    }
+    puts "DONE2"
+  end
+}
